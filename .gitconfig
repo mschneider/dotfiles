@@ -26,7 +26,7 @@
 	gr = grep -n
 	lg = log --graph --pretty=format:'%Cred%h%Creset %Cblue%aN%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	ps = push
-	pl = pull --no-ff
+	pl = pull
 	mr = merge
 	rb = rebase
 	st = status
