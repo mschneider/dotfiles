@@ -13,14 +13,15 @@ namespace :install do
         source = File.expand_path file
         target = File.join ENV["HOME"], file
         FileUtils::Verbose.mkdir_p File.dirname(target)
+        FileUtils::Verbose.rm_f target
         FileUtils::Verbose.ln_sf source, target
       end
     end
     task :all => name
   end
 
-  install :irb, "{.irbrc,.config/irb/*.rb}"
-  install :vim, ".vim*"
-  install :bash, "{.bash*,.git_completion,.rvmrc,.global_gitignore}"
+  install :git, "{.gitconfig,.global_gitignore}"
+  install :rvm, ".rvmrc"
+  install :zsh, ".zshrc"
 
 end
