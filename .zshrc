@@ -10,6 +10,7 @@ alias l="ls $LS_COLOR_PARAM"
 alias la='l -A'
 alias ll='l -l'
 alias lla='l -lA'
+alias g='git'
 alias grep='grep --color'
 alias rgrep='grep -rn'
 
@@ -24,9 +25,6 @@ export USE_EDITOR=$EDITOR
 export VISUAL=$EDITOR
 # fix zsh to emacs mode though
 bindkey -e
-
-# pdf viewer
-alias -s pdf=/Applications/Apple/Preview.app/Contents/MacOS/Preview
 
 # common typo..
 alias 'cd..=cd ..'
