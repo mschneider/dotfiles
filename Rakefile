@@ -22,6 +22,7 @@ namespace :install do
 
   install :git, "{.gitconfig,.global_gitignore}"
   install :rvm, ".rvmrc"
+  install :ssh, ".ssh/config"
   install :zsh, ".zshrc"
 
 end
