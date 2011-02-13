@@ -1,6 +1,7 @@
 [core]
 	editor = vim
 	autocrlf = input
+	excludesfile = ~/.global_gitignore
 [color]
 	branch = auto
 	diff = auto
@@ -21,7 +22,6 @@
 	ch = diff -M -C --find-copies-harder -l64 --stat HEAD
 	cl = clone
 	cm = commit
-	camm = cm -am
 	co = checkout
 	gr = grep -n
 	lg = log --graph --pretty=format:'%Cred%h%Creset %Cblue%aN%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
