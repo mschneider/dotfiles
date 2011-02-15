@@ -1,6 +1,5 @@
 [core]
 	editor = vim
-	autocrlf = input
 [color]
 	branch = auto
 	diff = auto
