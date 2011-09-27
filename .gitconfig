@@ -29,7 +29,9 @@
 	pl = pull
 	mr = merge
 	rb = rebase
-	st = status
+	rmb = !sh -c 'git branch -D $1 && git push origin :$1' -
 	sl = shortlog -sn
+	sm = submodule
+	st = status
 
 
