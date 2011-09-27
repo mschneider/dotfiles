@@ -43,5 +43,9 @@ export REPORTTIME=30
 # RET  %?
 PROMPT='%B%T%b %m:%c%(!.#.$) '
 
+# node
+NODE_PATH='/usr/local/lib/node_modules'
+# python
+PYTHONPATH='/usr/local/lib/python2.6/site-packages'
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
