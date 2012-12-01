@@ -14,13 +14,21 @@ alias g='git'
 alias grep='grep --color'
 alias rgrep='grep -rn'
 
+# functions
+loop () {
+  while true; do
+    $*;
+    sleep 5;
+  done
+}
+
 # shell
 export SHELL='/bin/zsh'
 
 # editor
-alias 'vi=vim'
+#alias 'vi=vim +"colorscheme desertEx"'
 alias 'm=mate'
-export EDITOR='vi'
+export EDITOR='vim'
 export USE_EDITOR=$EDITOR
 export VISUAL=$EDITOR
 # fix zsh to emacs mode though
@@ -47,5 +55,11 @@ PROMPT='%B%T%b %m:%c%(!.#.$) '
 NODE_PATH='/usr/local/lib/node_modules'
 # python
 PYTHONPATH='/usr/local/lib/python2.6/site-packages'
+# android
+ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r18
+# nvm
+. ~/.nvm/nvm.sh
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
